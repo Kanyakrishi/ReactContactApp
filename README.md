@@ -30,7 +30,7 @@ The project was initiated by following a YouTube tutorial, linked above. Challen
 3. Facilitating parent-to-child component communication via props.
 4. Utilizing callback functions for child-to-parent data transmission.
 5. Rendering lists in React effectively.
-6. Use of flexbox for styling
+6. Use of Flexbox for styling
 **Explicit Grouping**: the image and text (`name` and `email`) are wrapped together in a new `div`. This effectively groups them as a single flex item. The outer `.item` container then only has two major elements to layout: the group (image+text) and the icon.
 **Use of Flexbox**: By applying `display: 'flex'` to the outer `.item` container and using `justify-content: 'space-between'`, we ensure that there are two main items (the grouped content and the icon) laid out across the main axis of the container. The `space-between` value pushes these two main items to opposite ends of the container.
 **Flex Grow on Group**: Adding `flex: '1'` to the grouping div allows it to take up any available space, ensuring the icon remains aligned to the end. This is not strictly necessary to achieve the alignment but helps in ensuring the grouped content (image+text) and the icon use the available space efficiently.
@@ -48,8 +48,5 @@ If a high version is used then:
    
 
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://example.com/project-repo.git
+## Run the code
+npm start 
