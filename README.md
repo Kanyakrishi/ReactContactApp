@@ -1,70 +1,55 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was inspired by a tutorial on YouTube - [React Contact App Tutorial](https://www.youtube.com/watch?v=0riHps91AzE)
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+This React Contact App tutorial is designed to help learn various React concepts through a practical project. Users can add, view, and delete contacts.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Semantic UI
+- CSS
+- React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- View the contact list
+- Add new contacts
+- Delete contacts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Process
 
-### `npm run build`
+The project was initiated by following a YouTube tutorial, linked above. Challenges were faced particularly with styling and implementing routes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Learnings
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Understanding `useState` and `useEffect` hooks, including dependencies.
+2. Creating functional and class components(use render)
+3. Facilitating parent-to-child component communication via props.
+4. Utilizing callback functions for child-to-parent data transmission.
+5. Rendering lists in React effectively.
+6. Use of flexbox for styling
+**Explicit Grouping**: the image and text (`name` and `email`) are wrapped together in a new `div`. This effectively groups them as a single flex item. The outer `.item` container then only has two major elements to layout: the group (image+text) and the icon.
+**Use of Flexbox**: By applying `display: 'flex'` to the outer `.item` container and using `justify-content: 'space-between'`, we ensure that there are two main items (the grouped content and the icon) laid out across the main axis of the container. The `space-between` value pushes these two main items to opposite ends of the container.
+**Flex Grow on Group**: Adding `flex: '1'` to the grouping div allows it to take up any available space, ensuring the icon remains aligned to the end. This is not strictly necessary to achieve the alignment but helps in ensuring the grouped content (image+text) and the icon use the available space efficiently.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Prerequisites
 
-### `npm run eject`
+- Node.js
+- npm
+- react-router-dom
+- semantic-ui
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+If a high version is used then:
+1. React Router v6, where Switch has been replaced by Routes for defining route configurations.
+2. Route tag contains 'element' instead of 'component' which includes the Child component.
+   
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+   ```bash
+   git clone https://example.com/project-repo.git
